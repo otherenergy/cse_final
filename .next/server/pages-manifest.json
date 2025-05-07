@@ -2,7 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/home-landing-3": "pages/home-landing-3.js",
-  "/services-business": "pages/services-business.js",
-  "/contact-creative": "pages/contact-creative.js"
+  "/services-business": "pages/services-business.js"
 }
