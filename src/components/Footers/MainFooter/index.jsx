@@ -45,7 +45,7 @@ const Footer = ({ footerClass, footerBg, business, creative }) => {
           <div className="col-lg-3">
             <div className="clumn">
               <div className="logo mb-30">
-                <Link href="/landing-preview">
+                <Link href="">
                   <a>
                     <img src={`img/logo-${creative ?'dark':'light'}.png`} alt="" />
                   </a>
@@ -87,7 +87,7 @@ const Footer = ({ footerClass, footerBg, business, creative }) => {
               <ul className="address">
                 <li className="adrs mb-15">{ footerData.address }</li>
                 <li className="eml underline mb-15">
-                  <a href="#0">{ footerData.email }</a>
+                  <a href="">{ footerData.email }</a>
                 </li>
                 <li className="tel">
                   <h6 className={`${business ? 'gr-green-text': creative ? '':'gr-purple-red-text'}`}>{ footerData.phone }</h6>
@@ -128,17 +128,17 @@ const Footer = ({ footerClass, footerBg, business, creative }) => {
               <div className="horizontal-link fz-13">
                 <ul className="rest">
                   <li className="mr-30">
-                    <Link href="/#">
+                    <Link href="">
                     <a>Privacy policy</a>
                     </Link>
                   </li>
                   <li className="mr-30">
-                    <Link href="/#">
+                    <Link href="">
                     <a>Legal notice</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/#">
+                    <Link href="">
                     <a>Terms of service</a>
                     </Link>
                   </li>

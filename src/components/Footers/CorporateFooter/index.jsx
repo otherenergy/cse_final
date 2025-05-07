@@ -65,7 +65,7 @@ const Footer = () => {
                     <ul className="address rest">
                       <li className="adrs underline mb-15">{ footerData.address }</li>
                       <li className="eml">
-                        <a href="#0">{ footerData.email }</a>
+                        <a href="">{ footerData.email }</a>
                       </li>
                       <li className="tel gr-sunrise-text">
                         <h6 className="fw-700">{ footerData.phone }</h6>

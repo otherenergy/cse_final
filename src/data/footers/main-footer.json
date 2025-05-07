@@ -6,28 +6,28 @@
     },
     "links": [{
             "title": "Company",
-            "url": "/#"
+            "url": ""
         },
         {
             "title": "Team",
-            "url": "/#"
+            "url": ""
         },
         {
             "title": "Services",
-            "url": "/#"
+            "url": ""
         },
         {
             "title": "Products",
-            "url": "/#"
+            "url": ""
         }
     ],
     "recent_posts": [{
-            "url": "/#",
+            "url": "",
             "image": "img/blog/c3.jpg",
-            "title": "How to check the website before releasing it?"
+            "title": "Solar Energy Project"
         },
         {
-            "url": "/#",
+            "url": "",
             "image": "img/blog/c1.jpg",
             "title": "How to check the website before releasing it?"
         }
