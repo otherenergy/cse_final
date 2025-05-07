@@ -10,7 +10,7 @@ const Footer = () => {
             <div>
               <div className="text md-mb50">
                 <h2>Let&lsquo;s join to our community.</h2>
-                <p>Are you an artist or NFT project creator? <br /> Get in touch with us to get your content on nftsRavo.</p>
+                <p>Are you an artist or NFT project creator? <br /> Get in touch with us to get your content on nfts CleanStarEnergyLLC.</p>
                 <div className="users-imgs flex">
                   <div>
                     <div className="simg1">
@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="ml-15 fz-12">
-                    <span>Join to us more than<br /> <span className="fz-14 fw-700">40k+ </span> creators</span>
+                    <span>Join to us more than<br /> <span className="fz-14 fw-700">56 </span> creators</span>
                   </div>
                 </div>
               </div>
@@ -69,9 +69,9 @@ const Footer = () => {
             </div>
             <div className="col-lg-6">
               <div className="copyrights d-flex justify-content-end">
-                <p className="fz-13">© 2022 Ravo is Proudly Powered by 
+                <p className="fz-13">© 2025 CleanStarEnergyLLC is Proudly Powered by 
                   <span className="underline ms-1">
-                    <a href="https://themeforest.net/user/themescamp" rel="noreferrer" target="_blank">ThemesCamp</a>
+                    <a href="/#" rel="noreferrer" target="_blank">CleanStarEnergyLLC</a>
                   </span>
                 </p>
               </div>

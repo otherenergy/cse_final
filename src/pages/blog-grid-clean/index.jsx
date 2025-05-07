@@ -28,7 +28,7 @@ const BlogGridClean = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Blog Grid Clean</title>
+        <title>CleanStarEnergyLLC - Blog</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">

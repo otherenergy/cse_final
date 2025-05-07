@@ -26,7 +26,7 @@ const PortfolioColorfulTwoCols = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Portfolio Colorful | Two column</title>
+        <title>CleanStarEnergyLLC - Portfolio</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">

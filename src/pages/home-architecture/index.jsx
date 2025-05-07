@@ -61,7 +61,7 @@ const HomeArchitecture = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Home Architecture</title>
+        <title>CleanStarEnergyLLC - Home</title>
       </Head>
 
       <AppLayout type="architecture" links={nav_links}>

@@ -67,7 +67,7 @@ const HomeRestaurant = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Restaurant</title>
+        <title>CleanStarEnergyLLC - Home</title>
       </Head>
 
       <AppLayout type="restaurant" links={nav_links} navTheme="dark">

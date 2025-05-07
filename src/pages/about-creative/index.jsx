@@ -36,7 +36,7 @@ const AboutCreative = () => {
   return (
     <>
       <Head>
-        <title>Ravo - About Creative</title>
+        <title>CleanStarEnergyLLC - About</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">

@@ -87,15 +87,15 @@ const Footer = ({ hideTop  })=>{
                                     className: "copyrights d-flex justify-content-end",
                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                                         children: [
-                                            "\xa9 2022 Ravo is Proudly Powered by",
+                                            "\xa9 2025 CleanStarEnergyLLC is Proudly Powered by",
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                 className: "underline",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    href: "https://themeforest.net/user/themescamp",
+                                                    href: "/#",
                                                     rel: "noreferrer",
                                                     target: "_blank",
                                                     className: "yellow-green-color ms-1",
-                                                    children: "ThemesCamp"
+                                                    children: "CleanStarEnergyLLC"
                                                 })
                                             })
                                         ]

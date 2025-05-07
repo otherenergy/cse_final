@@ -26,7 +26,7 @@ const PortfolioColorfulThreeCols = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Portfolio Colorful | Three column</title>
+        <title>CleanStarEnergyLLC - Portfolio</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">

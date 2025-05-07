@@ -27,7 +27,7 @@ const BlogPost = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Blog Post</title>
+        <title>CleanStarEnergyLLC - Blog</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">

@@ -56,7 +56,7 @@ const HomeFreelancer = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Freelancer</title>
+        <title>CleanStarEnergyLLC - Home</title>
       </Head>
 
       <AppLayout type="freelancer" links={nav_links} navTheme="dark">

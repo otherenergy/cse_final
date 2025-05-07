@@ -26,7 +26,7 @@ const PortfolioOverlayTwoCols = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Portfolio Overlay | Two columns</title>
+        <title>CleanStarEnergyLLC - Portfolio</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">

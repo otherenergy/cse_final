@@ -55,7 +55,7 @@ const ContactArchitecture = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Contact Architecture</title>
+        <title>CleanStarEnergyLLC - Contact US</title>
       </Head>
 
       <AppLayout type="architecture" links={nav_links}>

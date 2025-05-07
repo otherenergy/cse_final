@@ -28,7 +28,7 @@ const BlogSideImg = () => {
   return (
     <>
       <Head>
-        <title>Ravo - Blog Side Image</title>
+        <title>CleanStarEnergyLLC - Blog</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">
