@@ -57,7 +57,7 @@ const HomeNFTMarketplace = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - NFTs Marketplace</title>
+        <title>Clean Star Energy LLC - NFTs Marketplace</title>
       </Head>
 
       <AppLayout type="nft-market" links={nav_links}>

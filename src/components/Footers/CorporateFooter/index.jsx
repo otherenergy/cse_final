@@ -29,7 +29,7 @@ const Footer = () => {
                       </a>
                     </div>
                     <div className="text">
-                      <p>We create digital experiences for brands and companies by using technology.
+                      <p>We create digital experiences for brands and companies by using technology
                       </p>
                     </div>
                     <div className="social circle-bord mt-30">

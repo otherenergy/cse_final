@@ -32,7 +32,7 @@ const AboutBusiness = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - About US</title>
+        <title>Clean Star Energy LLC - About us</title>
       </Head>
 
       <MainLightLayout>

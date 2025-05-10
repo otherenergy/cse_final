@@ -36,13 +36,13 @@ const AboutCreative = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - About</title>
+        <title>Clean Star Energy LLC - About us</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">
         <StickyBar />
         <FixedSearch />
-        <Header title="About Us." />
+        <Header title="About us" />
         <main className="main-content">
           <About />
           <Numbers />

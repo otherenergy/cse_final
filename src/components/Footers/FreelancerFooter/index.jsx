@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
             <div className="col-md-9">
               <div className="copyrights d-flex justify-content-end">
-                <p className="fz-13">© 2025 CleanStarEnergyLLC is Proudly Powered by <span className="underline"><a href="/#" target="_blank" rel="noreferrer">CleanStarEnergyLLC</a></span></p>
+                <p className="fz-13">© 2025 Clean Star Energy LLC is Proudly Powered by <span className="underline"><a href="/#" target="_blank" rel="noreferrer">Clean Star Energy LLC</a></span></p>
               </div>
             </div>
           </div>

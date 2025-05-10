@@ -41,9 +41,9 @@ const Footer = ({ hideTop }) => {
             <div className="col-md-9">
               <div className="copyrights d-flex justify-content-end">
                 <p>
-                  © 2025 CleanStarEnergyLLC is Proudly Powered by
+                  © 2025 www.cleanstarenergyusa.com is Proudly Powered by
                   <span className="underline">
-                    <a href="/#" rel="noreferrer" target="_blank" className="yellow-green-color ms-1">CleanStarEnergyLLC</a>
+                    <a href="/#" rel="noreferrer" target="_blank" className="yellow-green-color ms-1">Clean Star Energy LLC</a>
                   </span>
                 </p>
               </div>

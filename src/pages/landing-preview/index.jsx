@@ -34,7 +34,7 @@ const LandingPreview = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Landing</title>
+        <title>Clean Star Energy LLC - Landing</title>
       </Head>
 
       <PreviewLayout>

@@ -26,13 +26,13 @@ const PortfolioClassicThreeCols = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Portfolio</title>
+        <title>Clean Star Energy LLC - Portfolio</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">
         <StickyBar />
         <FixedSearch />
-        <Header title="Portfolio classic." subTitle="Portfolio classic three column" />
+        <Header title="Portfolio classic" subTitle="Portfolio classic three column" />
         <main className="position-re">
           <Portfolio />
           <Footer footerClass="main-footer bg-dark-blue" />

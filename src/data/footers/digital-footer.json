@@ -22,27 +22,27 @@
         }
     ],
     "instagram_posts": [{
-            "url": "https://cleanstarenergyusa.com/",
+            "url": "https://www.cleanstarenergyusa.com/",
             "image": "img/insta/1.jpg"
         },
         {
-            "url": "https://cleanstarenergyusa.com/",
+            "url": "https://www.cleanstarenergyusa.com/",
             "image": "img/insta/2.jpg"
         },
         {
-            "url": "https://cleanstarenergyusa.com/",
+            "url": "https://www.cleanstarenergyusa.com/",
             "image": "img/insta/3.jpg"
         },
         {
-            "url": "https://cleanstarenergyusa.com/",
+            "url": "https://www.cleanstarenergyusa.com/",
             "image": "img/insta/4.jpg"
         },
         {
-            "url": "https://cleanstarenergyusa.com/",
+            "url": "https://www.cleanstarenergyusa.com/",
             "image": "img/insta/5.jpg"
         },
         {
-            "url": "https://cleanstarenergyusa.com/",
+            "url": "https://www.cleanstarenergyusa.com/",
             "image": "img/insta/6.jpg"
         }
     ],
@@ -50,7 +50,7 @@
     "email": "admin@cleanstarenergyusa.com",
     "phone": "+1(302)612-8648",
     "theme_author": {
-        "name": "CleanStarEnergyLLC",
-        "url": "https://cleanstarenergyusa.com/"
+        "name": "Clean Star Energy LLC",
+        "url": "https://www.cleanstarenergyusa.com/"
     }
 }

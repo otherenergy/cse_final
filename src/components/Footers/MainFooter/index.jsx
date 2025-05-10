@@ -21,7 +21,7 @@ const Footer = ({ footerClass, footerBg, business, creative }) => {
                   <div className="cont">
                     <h6 className="sub-title gr-green-text">Stay Connected</h6>
                     <h4 className="fz-50">Partner with us!</h4>
-                    <p className="mt-5 fw-300 fz-20">Let’s build the next big thing together.</p>
+                    <p className="mt-5 fw-300 fz-20">Let’s build the next big thing together</p>
                   </div>
                 </div>
                 <div className="col-lg-5 d-flex justify-content-end">
@@ -148,7 +148,7 @@ const Footer = ({ footerClass, footerBg, business, creative }) => {
             <div className="col-lg-6">
               <div className="copyrights d-flex justify-content-end">
                 <p className="fz-13">
-                © 2025 Clean Star Energy llc is Proudly Powered by 
+                © 2025 www.cleanstarenergyusa.com is Proudly Powered by 
                   <span className="underline">
                     <a href={footerData.theme_author.url} rel="noreferrer" target="_blank" className={`${business ? 'gr-green-text':creative ? '':'gr-purple-red-text'} ms-1`}>{ footerData.theme_author.name }</a>
                   </span>

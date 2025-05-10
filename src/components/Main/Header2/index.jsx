@@ -94,8 +94,8 @@ const Header = () => {
               <div className="sub-head radius mb-10">
                 <span>data analytics is inevitable</span>
               </div>
-              <h1 className="fw-800 fz-45">Union of new layers of blockchain with a profesional services.</h1>
-              <p>Proven Expertise With a track record of success ensuring your venture is legally sound and technologically.</p>
+              <h1 className="fw-800 fz-45">Union of new layers<br></br>of blockchain from <br></br>experts</h1>
+              <p>Proven Expertise With a track record of success ensuring your venture is legally sound and technologically</p>
               <div className="mt-40 flex">
                 <div>
                   <Link href="/contact-creative">

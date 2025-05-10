@@ -26,7 +26,7 @@ const PortfolioOverlayFourCols = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Portfolio</title>
+        <title>Clean Star Energy LLC - Portfolio</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">

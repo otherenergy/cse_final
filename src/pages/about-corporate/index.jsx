@@ -33,7 +33,7 @@ const AboutCorporate = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - About</title>
+        <title>Clean Star Energy LLC - About us</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">

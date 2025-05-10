@@ -18,10 +18,10 @@ const Header = () => {
           <div className="col-lg-6 valign">
             <div className="cont">
               <div className="sub-head radius mb-10">
-                <span>Amazing design services</span>
+                <span>Clean Star Energy LLC</span>
               </div>
-              <h1 className="fw-700">Grow Your Business With Us.</h1>
-              <p>Our designers stay ahead of the curve to provide engaging and user-friendly website designs to make your business stand out.</p>
+              <h1 className="fw-700">Grow Your Business With Us</h1>
+              <p>Our designers stay ahead of the curve to provide engaging and user-friendly website designs to make your business stand out</p>
 
               <div className="mt-40 flex">
                 <div>
@@ -33,7 +33,7 @@ const Header = () => {
                   </Link>
                 </div>
                 <div className="valign">
-                  <a href="https://youtu.be/AzwC6umvd1s" className="btn vid underline" onClick={openVideo}>
+                  <a href="https://youtu.be/" className="btn vid underline" onClick={openVideo}>
                     <span className="fw-500 fz-13">View Our Story</span>
                     <i className="fas fa-play fz-12 ml-5"></i>
                   </a>

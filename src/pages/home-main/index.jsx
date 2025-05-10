@@ -38,7 +38,7 @@ const HomeMain = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Home</title>
+        <title>Clean Star EnergyLLC - Home</title>
       </Head>
 
       <MainLightLayout>

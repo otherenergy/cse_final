@@ -26,13 +26,13 @@ const PortfolioClassicMasonry = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Portfolio</title>
+        <title>Clean Star Energy LLC - Portfolio</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">
         <StickyBar />
         <FixedSearch />
-        <Header title="Portfolio classic." subTitle="Portfolio classic Masonry" />
+        <Header title="Portfolio classic" subTitle="Portfolio classic Masonry" />
         <main className="position-re">
           <Portfolio />
           <Footer footerClass="main-footer bg-dark-blue" />

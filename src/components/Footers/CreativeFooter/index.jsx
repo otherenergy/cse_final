@@ -52,7 +52,7 @@ const Footer = () => {
               <ul className="address">
                 <li className="adrs mb-15">Germany — 785 15h Street, Office 478 Berlin, De 81566</li>
                 <li className="eml underline mb-15">
-                  <a href="#0">CleanStarEnergyLLC@Gmail.com</a>
+                  <a href="#0">admin@cleanstarenergyusa.com</a>
                 </li>
                 <li className="tel">
                   <h6>+1 840 841 25 69</h6>
@@ -110,7 +110,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-6">
               <div className="copyrights d-flex justify-content-end">
-                <p className="fz-13">© 2025 CleanStarEnergyLLC is Proudly Powered by <span className="underline"><a rel="noreferrer" href="/#" target="_blank">CleanStarEnergyLLC</a></span></p>
+                <p className="fz-13">© 2025 www.cleanstarenergyusa.com is Proudly Powered by <span className="underline"><a rel="noreferrer" href="/#" target="_blank">Clean Star Energy LLC</a></span></p>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: CleanStarEnergyLLC
+    Theme Name: Clean Star Energy LLC
     Version: 1.0
 
 -----------------------------------------------------------------------------------*/
@@ -3830,7 +3830,7 @@ img.left {
 }
 
 .navbar .logo {
-  width: 70px;
+  width: 350px;
 }
 
 .navbar .search-area {
@@ -10079,9 +10079,16 @@ body.index-main .bg-gray {
   .md-hide,
   .sticky-bar .left-bar .contact-butn,
   .sticky-bar .right-bar .social-text,
-  header.rshp .front,
   .testim-box-shape .back-shape {
     display: none;
+  }
+  header.rshp .front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 65vh;
+  z-index: 2;
   }
   .fixed-search .search-area.search-on .search-form form input {
     width: 200px;
@@ -10124,7 +10131,7 @@ body.index-main .bg-gray {
   }
   .navbar .logo {
     margin-left: 15px;
-    width: 50px;
+    width: 150px;
   }
   .nav-scroll .navbar-collapse .nav-link,
   .light .navbar-collapse .nav-link {
@@ -10556,6 +10563,17 @@ body.index-main .bg-gray {
 }
 
 @media screen and (max-width: 767px) {
+  .bg-img {
+    background-position: center !important;
+  }
+  header.rshp .front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 65vh;
+  z-index: 3;
+  }
   .sm-mb10 {
     margin-bottom: 10px;
   }
@@ -10658,7 +10676,7 @@ body.index-main .bg-gray {
     bottom: 15px;
   }
   .navbar .logo {
-    width: 40px;
+    width: 180px;
   }
   .fw-700 {
     font-weight: 600 !important;
@@ -10752,6 +10770,9 @@ body.index-main .bg-gray {
 }
 
 @media screen and (max-width: 480px) {
+  .bg-img {
+    background-position: center !important;
+  }
   .hero-cir .th-cir {
     width: auto;
     height: auto;
@@ -10774,6 +10795,14 @@ body.index-main .bg-gray {
     height: 220px;
     margin: 30px auto;
   }
+  header.rshp .front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55vw;
+  height: 70vh;
+  z-index: 3;
+}
 }
 
 /* ====================== [ End Responsive ] ====================== */

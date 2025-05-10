@@ -10,7 +10,7 @@ const Footer = () => {
             <div>
               <div className="text md-mb50">
                 <h2>Let&lsquo;s join to our community.</h2>
-                <p>Are you an artist or NFT project creator? <br /> Get in touch with us to get your content on nfts CleanStarEnergyLLC.</p>
+                <p>Are you an artist or NFT project creator? <br /> Get in touch with us to get your content on nfts Clean Star Energy LLC</p>
                 <div className="users-imgs flex">
                   <div>
                     <div className="simg1">
@@ -69,9 +69,9 @@ const Footer = () => {
             </div>
             <div className="col-lg-6">
               <div className="copyrights d-flex justify-content-end">
-                <p className="fz-13">© 2025 CleanStarEnergyLLC is Proudly Powered by 
+                <p className="fz-13">© 2025 www.cleanstarenergyusa.com is Proudly Powered by 
                   <span className="underline ms-1">
-                    <a href="/#" rel="noreferrer" target="_blank">CleanStarEnergyLLC</a>
+                    <a href="/#" rel="noreferrer" target="_blank">Clean Star Energy LLC</a>
                   </span>
                 </p>
               </div>

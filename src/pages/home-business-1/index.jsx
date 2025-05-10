@@ -34,7 +34,7 @@ const HomeBusiness1 = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Home</title>
+        <title>Clean Star Energy LLC - Home</title>
       </Head>
 
       <MainLightLayout>

@@ -57,7 +57,7 @@ const HomeMobileApp = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Mobile App</title>
+        <title>Clean Star Energy LLC - Mobile App</title>
       </Head>
 
       <AppLayout type="mobile-app" links={nav_links}>

@@ -26,13 +26,13 @@ const PortfolioColorfulFourCols = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Portfolio</title>
+        <title>Clean Star Energy LLC - Portfolio</title>
       </Head>
 
       <MainLightLayout defaultTheme="dark" defaultLogoTheme="dark">
         <StickyBar />
         <FixedSearch />
-        <Header title="Portfolio Colorful." subTitle="Portfolio Colorful four column" />
+        <Header title="Portfolio" subTitle="Portfolio Colorful four column" />
         <main className="position-re">
           <Portfolio />
           <Footer footerClass="main-footer bg-dark-blue" />

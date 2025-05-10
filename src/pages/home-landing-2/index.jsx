@@ -34,7 +34,7 @@ const HomeLanding2 = () => {
   return (
     <>
       <Head>
-        <title>CleanStarEnergyLLC - Home</title>
+        <title>Clean Star Energy LLC - Home</title>
       </Head>
 
       <MainLightLayout defaultTheme={'dark'} defaultLogoTheme="dark">

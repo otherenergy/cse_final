@@ -10,10 +10,10 @@ const Footer = () => {
             <div className="col-lg-5 valign">
               <div className="cont pb-80">
                 <div className="fz-12 ls2 text-u mb-10">
-                  <span className="gr-orange-text">Download CleanStarEnergyLLC App</span>
+                  <span className="gr-orange-text">Download Clean Star Energy LLC App</span>
                 </div>
                 <h2 className="mb-20 fw-500">We available on store download now.</h2>
-                <p>Call US. Now.</p>
+                <p>Call US. Now</p>
 
                 <div className="download-button mt-40">
                   <a href="#0" className="butn butn-lg butn-rounded down-butn bg-white mr-10">
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 d-flex justify-content-end">
               <div className="copyrights">
-                <p className="fz-14">Made By <a href="#0" className="gr-orange-text">UI-ThemeZ</a></p>
+                <p className="fz-14">Made By <a href="#0" className="gr-orange-text">Clean Star Energy LLC</a></p>
               </div>
             </div>
           </div>
