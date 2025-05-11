@@ -10086,9 +10086,9 @@ body.index-main .bg-gray {
   position: absolute;
   top: 0;
   right: 0;
-  width: 60vw;
-  height: 65vh;
-  z-index: 2;
+  width: 50vw;
+  height: 45vh;
+  z-index: 3;
   }
   .fixed-search .search-area.search-on .search-form form input {
     width: 200px;
@@ -10570,8 +10570,8 @@ body.index-main .bg-gray {
   position: absolute;
   top: 0;
   right: 0;
-  width: 60vw;
-  height: 65vh;
+  width: 20vw;
+  height: 45vh;
   z-index: 3;
   }
   .sm-mb10 {
@@ -10799,8 +10799,8 @@ body.index-main .bg-gray {
   position: absolute;
   top: 0;
   right: 0;
-  width: 55vw;
-  height: 70vh;
+  width: 75vw;
+  height: 35vh;
   z-index: 3;
 }
 }

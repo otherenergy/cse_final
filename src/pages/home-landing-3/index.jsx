@@ -47,7 +47,7 @@ const HomeLanding3 = () => {
         <About />
         <Process />
         {/* <Portfolio /> */}
-        <Skills />
+        {/* <Skills /> */}
         <Testimonials />
         {/* <Blog /> */}
         <Footer footerClass="pb-40" type="purple-red" />
