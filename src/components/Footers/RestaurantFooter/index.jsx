@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-6 d-flex justify-content-end">
             <div className="clumn text-center">
-              <Link href="/contact-creative">
+              <Link href="/cleanstarenergy-contact">
                 <a className="butn butn-lg butn-light butn-bord">
                   <span>Make a Reservation</span>
                 </a>
@@ -62,17 +62,17 @@ const Footer = () => {
               <div className="horizontal-link fz-13">
                 <ul className="rest">
                   <li className="mr-30">
-                    <Link href="/services-business">
+                    <Link href="/cleanstarenergy-services">
                       <a>Privacy policy</a>
                     </Link>
                   </li>
                   <li className="mr-30">
-                    <Link href="/services-business">
+                    <Link href="/cleanstarenergy-services">
                       <a>Legal notice</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services-business">
+                    <Link href="/cleanstarenergy-services">
                       <a>Terms of service</a>
                     </Link>
                   </li>

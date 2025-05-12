@@ -37,7 +37,7 @@ const Section = () => {
               <p>
                 Morbi sagittis hendrt nulla simply dummy text of the printing and typesetting has been the industry’s en diam ips elementum pretium hendrerit ultricies.
               </p>
-              <Link href="/about-creative">
+              <Link href="/cleanstarenergy-about">
                 <a className="butn butn-md gr-purple2-bg text-light radius-30 mt-40">
                   <span className="text slide-up">View More</span>
                   <span className="text slide-down">View More</span>

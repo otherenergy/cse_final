@@ -15,7 +15,7 @@ const CallToAction = () => {
             <div className="text-center">
               <h2 className="mb-5">Have a project in mind? Let&lsquo;s discuss</h2>
               <p>lead your business to success with Clean Star Energy LLC design better websites and spend less time</p>
-              <Link href="/contact-creative">
+              <Link href="/cleanstarenergy-contact">
                 <a className="butn butn-md gr-purple-red-bg text-light mt-30">
                   <span className="text slide-up">Purchase Now</span>
                   <span className="text slide-down">Purchase Now</span>

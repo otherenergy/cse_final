@@ -51,25 +51,25 @@ const Navbar = ({ navbarRef, theme, logoTheme }) => {
           <ul className="navbar-nav">
             <li className="nav-item dropdown">
             <span className="nav-link dropdown-toggle" role="button" aria-expanded="false">
-              <Link href="/home-landing-3"><a>Home</a></Link>
+              <Link href="/cleanstarenergy"><a>Home</a></Link>
             </span>
             </li>
             
             <li className="nav-item dropdown">
             <span className="nav-link dropdown-toggle" role="button" aria-expanded="false">
-              <Link href="/about-creative"><a>About</a></Link>
+              <Link href="/cleanstarenergy-about"><a>About</a></Link>
             </span>
             </li>
             
             <li className="nav-item dropdown">
             <span className="nav-link dropdown-toggle" role="button" aria-expanded="false">
-              <Link href="/services-business"><a>Services</a></Link>
+              <Link href="/cleanstarenergy-services"><a>Services</a></Link>
             </span>
             </li>
 
             <li className="nav-item dropdown">
             <span className="nav-link dropdown-toggle" role="button" aria-expanded="false">
-              <Link href="/contact-creative"><a>Contact</a></Link>
+              <Link href="/cleanstarenergy-contact"><a>Contact</a></Link>
             </span>
             </li>
 

@@ -1,11 +1,11 @@
 "use strict";
 (() => {
 var exports = {};
-exports.id = 2888;
-exports.ids = [2888];
+exports.id = 888;
+exports.ids = [888];
 exports.modules = {
 
-/***/ 1083:
+/***/ 5272:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -20,9 +20,9 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
-// EXTERNAL MODULE: external "next/script"
-var script_ = __webpack_require__(4780);
-var script_default = /*#__PURE__*/__webpack_require__.n(script_);
+;// CONCATENATED MODULE: external "next/script"
+const script_namespaceObject = require("next/script");
+var script_default = /*#__PURE__*/__webpack_require__.n(script_namespaceObject);
 // EXTERNAL MODULE: external "next/head"
 var head_ = __webpack_require__(968);
 var head_default = /*#__PURE__*/__webpack_require__.n(head_);
@@ -166,13 +166,6 @@ module.exports = require("next/head");
 
 /***/ }),
 
-/***/ 4780:
-/***/ ((module) => {
-
-module.exports = require("next/script");
-
-/***/ }),
-
 /***/ 6689:
 /***/ ((module) => {
 
@@ -194,7 +187,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(1083));
+var __webpack_exports__ = (__webpack_exec__(5272));
 module.exports = __webpack_exports__;
 
 })();

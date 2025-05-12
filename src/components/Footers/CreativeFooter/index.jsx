@@ -32,16 +32,16 @@ const Footer = () => {
               <h5 className="title fw-600 fz-20 mb-30">About Us</h5>
               <ul className="cmp-links">
                 <li className="mb-10">
-                  <a href="about-creative.html">Company</a>
+                  <a href="#">Company</a>
                 </li>
                 <li className="mb-10">
-                  <a href="about-business.html">Team</a>
+                  <a href="#">Team</a>
                 </li>
                 <li className="mb-10">
-                  <a href="services-creative.html">Services</a>
+                  <a href="#">Services</a>
                 </li>
                 <li className="mb-10">
-                  <a href="portfolio-classic-masonry.html">Products</a>
+                  <a href="#">Products</a>
                 </li>
               </ul>
             </div>
@@ -97,13 +97,13 @@ const Footer = () => {
               <div className="horizontal-link fz-13">
                 <ul className="rest">
                   <li className="mr-30">
-                    <a href="services-business.html">Privacy policy</a>
+                    <a href="#">Privacy policy</a>
                   </li>
                   <li className="mr-30">
-                    <a href="services-business.html">Legal notice</a>
+                    <a href="#">Legal notice</a>
                   </li>
                   <li>
-                    <a href="services-business.html">Terms of service</a>
+                    <a href="#">Terms of service</a>
                   </li>
                 </ul>
               </div>

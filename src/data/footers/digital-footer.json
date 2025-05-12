@@ -6,19 +6,19 @@
     },
     "links": [{
             "title": "Company",
-            "url": "/about-creative"
+            "url": "/cleanstarenergy-about"
         },
         {
             "title": "Team",
-            "url": "/about-business"
+            "url": "/cleanstarenergy-about"
         },
         {
             "title": "Services",
-            "url": "/services-creative"
+            "url": "/cleanstarenergy-services"
         },
         {
             "title": "Products",
-            "url": "/portfolio-classic-masonry"
+            "url": "#"
         }
     ],
     "instagram_posts": [{
