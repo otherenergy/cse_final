@@ -32,7 +32,7 @@ const Header = () => {
             <div className="col-md-2 offset-lg-2 valign">
               <div className="full-width text-center">
                 <div className="play-button">
-                  <a href="https://youtu.be/AzwC6umvd1s" className="vid" onClick={openVideo}>
+                  <a href="https://youtu.be/" className="vid" onClick={openVideo}>
                     <i className="fas fa-play"></i>
                   </a>
                 </div>
