@@ -144,7 +144,7 @@
 }
 
 .bg-light {
-  background-color: #fff !important;
+  background-color: #23262D !important;
 }
 
 .bg-gray {
@@ -152,7 +152,7 @@
 }
 
 .bg-light-gray {
-  background: #f7f7f7;
+  background: #23262D;
 }
 
 .bg-light-blue {
@@ -183,9 +183,9 @@
 }
 
 .gray-gr-bg {
-  background: -webkit-linear-gradient(315.26deg, #f7f7f7 0%, rgba(228, 238, 255, 0.1) 100%);
-  background: -o-linear-gradient(315.26deg, #f7f7f7 0%, rgba(228, 238, 255, 0.1) 100%);
-  background: linear-gradient(134.74deg, #f7f7f7 0%, rgba(228, 238, 255, 0.1) 100%);
+  background: -webkit-linear-gradient(315.26deg, #23262D 0%, rgba(228, 238, 255, 0.1) 100%);
+  background: -o-linear-gradient(315.26deg, #23262D 0%, rgba(228, 238, 255, 0.1) 100%);
+  background: linear-gradient(134.74deg, #23262D 0%, rgba(228, 238, 255, 0.1) 100%);
 }
 
 .gr-blue2-bg {
@@ -542,17 +542,17 @@
 }
 
 .gr-grayblue-light-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f7f8), to(transparent));
-  background-image: -webkit-linear-gradient(top, #f3f7f8 0%, transparent 100%);
-  background-image: -o-linear-gradient(top, #f3f7f8 0%, transparent 100%);
-  background-image: linear-gradient(to bottom, #f3f7f8 0%, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#23262D), to(transparent));
+  background-image: -webkit-linear-gradient(top, #23262D 0%, transparent 100%);
+  background-image: -o-linear-gradient(top, #23262D 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, #23262D 0%, transparent 100%);
 }
 
 .gr-grayblue-light-bg.to-up {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f3f7f8));
-  background-image: -webkit-linear-gradient(top, transparent 0%, #f3f7f8 100%);
-  background-image: -o-linear-gradient(top, transparent 0%, #f3f7f8 100%);
-  background-image: linear-gradient(to bottom, transparent 0%, #f3f7f8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#23262D));
+  background-image: -webkit-linear-gradient(top, transparent 0%, #23262D 100%);
+  background-image: -o-linear-gradient(top, transparent 0%, #23262D 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #23262D 100%);
 }
 
 /* ====================== [ End Gradient ] ====================== */

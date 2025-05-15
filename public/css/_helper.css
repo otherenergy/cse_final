@@ -92,7 +92,7 @@ img.left {
 }
 
 .bg-light {
-  background-color: #fff;
+  background-color: #23262D;
 }
 
 .bg-gray {
@@ -100,7 +100,7 @@ img.left {
 }
 
 .bg-light-gray {
-  background: #f7f7f7;
+  background: #23262D;
 }
 
 .bg-light-blue {
@@ -431,7 +431,7 @@ img.left {
            text color
 -------------------------------------------------------*/
 .text-white {
-  color: #FFF;
+  color: #23262D;
 }
 
 .text-black {
@@ -451,7 +451,7 @@ img.left {
 }
 
 .text-hover-light:hover {
-  color: #fff !important;
+  color: #23262D !important;
 }
 
 /*-------------------------------------------------------

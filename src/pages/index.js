@@ -19,7 +19,7 @@ const Home = () => {
     useEffect(() => {
         router.replace('/cleanstarenergy')
     }, [])
-    return <div />
+    return <div>Loading...</div>
 }
 
 

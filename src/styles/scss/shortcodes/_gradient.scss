@@ -132,7 +132,7 @@
 }
 
 .bg-light {
-    background-color: #fff !important;
+    background-color: #23262D !important;
 }
 
 .bg-gray {
@@ -140,7 +140,7 @@
 }
 
 .bg-light-gray{
-    background: #f7f7f7;
+    background: #23262D;
 }
 
 .bg-light-blue{
@@ -169,7 +169,7 @@
 }
 
 .gray-gr-bg{
-    background: linear-gradient(134.74deg, #f7f7f7 0%, rgba(228, 238, 255, .1) 100%);
+    background: linear-gradient(134.74deg, #23262D 0%, rgba(228, 238, 255, .1) 100%);
 }
 
 
@@ -449,10 +449,10 @@
 }
 
 .gr-grayblue-light-bg{
-    background-image: linear-gradient(to bottom, #f3f7f8 0%, transparent 100%);
+    background-image: linear-gradient(to bottom, #23262D 0%, transparent 100%);
 
     &.to-up{
-        background-image: linear-gradient(to bottom, transparent 0%, #f3f7f8 100%);
+        background-image: linear-gradient(to bottom, transparent 0%, #23262D 100%);
     }
 }
 

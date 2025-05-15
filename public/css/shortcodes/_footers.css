@@ -105,7 +105,7 @@ footer.main-footer .subscribe form input {
   width: 100%;
   padding: 25px 30px;
   padding-right: 210px;
-  background: #fff;
+  background: #23262D;
   border: 0;
   -webkit-box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.1);
@@ -181,14 +181,14 @@ footer.main-footer.dark-bg .sub-footer {
 }
 
 footer.gr-gray {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(transparent));
-  background: -webkit-linear-gradient(top, #f7f7f7, transparent);
-  background: -o-linear-gradient(top, #f7f7f7, transparent);
-  background: linear-gradient(to bottom, #f7f7f7, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(#23262D), to(transparent));
+  background: -webkit-linear-gradient(top, #23262D, transparent);
+  background: -o-linear-gradient(top, #23262D, transparent);
+  background: linear-gradient(to bottom, #23262D, transparent);
 }
 
 footer.bg-dark-blue {
-  color: #fff;
+  color: #23262D;
 }
 
 footer.bg-dark-blue:before {
@@ -229,7 +229,7 @@ footer .cal {
 }
 
 footer .cal .butn-gr {
-  background: #fff;
+  background: #23262D;
 }
 
 footer .cal .butn-gr span {
@@ -257,7 +257,7 @@ footer .logo {
 
 .footer-half {
   background: #1c212a;
-  color: #fff;
+  color: #23262D;
   position: relative;
   margin-top: 80px;
   z-index: 2;

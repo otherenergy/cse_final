@@ -44,7 +44,7 @@ const About = () => {
                   <circle cx="150" cy="100" r="75" fill="none" />
                   <g>
                     <use xlinkHref="#circlePath" fill="none" />
-                    <text fill="#3b3f82">
+                    <text fill="#BCBCBC">
                       <textPath xlinkHref="#circlePath">Years Of Experience . Years Of Experience</textPath>
                     </text>
                   </g>

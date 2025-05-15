@@ -15,7 +15,7 @@ class MyDocument extends Document {
             <meta name = "keywords" content = "clean star energy LLC" />
             <meta name = "description" content = "clean star energy LLC" />
             <meta name = "author" content = "" />
-            <link rel = "shortcut icon" href = "/img/favicon.ico" />
+            <link rel = "shortcut icon" href = "/img/favicon.ico" sizes="48x48" />
             <link rel = "canonical" href="https://www.cleanstarenergyusa.com/cleanstarenergy" />
             <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" />
             <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" />

@@ -6,7 +6,7 @@
 
     .box-shadow{
         padding: 80px 50px;
-        background: #fff;
+        background: #656a76;
         box-shadow: 0px 20px 40px rgba(60,63,130,.07);
         position: relative;
         margin-top: -80px;
@@ -17,7 +17,7 @@
         input,
         textarea{
             padding: 15px 20px;
-            background: rgba(60,63,130,.04);
+            background: rgba(255, 255, 255, 1);
             border: 0;
             border-bottom: 1px solid rgba(60,63,130,.07);
             width: 100%;
@@ -36,14 +36,14 @@
             min-width: 180px;
             text-align: center;
             border-radius: 30px;
-            border: 1px solid #3b3f82;
-            background: #3b3f82;
-            color: #fff;
+            border: 1px solid #BCBCBC;
+            background: #BCBCBC;
+            color: #23262D;
             transition: all .4s;
 
             &:hover{
                 background: transparent;
-                color: #3b3f82;
+                color: #BCBCBC;
             }
         }
     }

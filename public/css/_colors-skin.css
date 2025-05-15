@@ -15,7 +15,7 @@ body.index-corporate .skills-box .skill-progress .progres {
 }
 
 body.startup .bg-gray {
-  background: #f7f7f7;
+  background: #23262D;
 }
 
 body.startup .butn.color {
@@ -27,7 +27,7 @@ body.startup .main-color {
 }
 
 body.cr-agency {
-  color: #3b3f82;
+  color: #BCBCBC;
 }
 
 body.cr-agency p {
@@ -43,7 +43,7 @@ body.cr-agency .sub-color {
 }
 
 body.cr-agency .bg-gray {
-  background: #fff0ef;
+  background: #23262D;
 }
 
 body.cr-agency .bg-blck {
@@ -60,7 +60,7 @@ body.cr-agency .states ul .sd-color {
 
 body.cr-agency .states ul .sd-color span,
 body.cr-agency .states ul .sd-color h5 {
-  color: #3b3f82;
+  color: #BCBCBC;
 }
 
 body.sass1 {
@@ -68,7 +68,7 @@ body.sass1 {
 }
 
 body.land-demo2 {
-  color: #1a2860;
+  color: #BCBCBC;
 }
 
 body.land-demo2 p {
@@ -77,11 +77,11 @@ body.land-demo2 p {
 }
 
 body.land-demo2 .bg-gray {
-  background: #f3f7f8;
+  background: #23262D;
 }
 
 body.index-main .bg-gray {
-  background: #fafafb;
+  background: #23262D;
 }
 
 /* ====================== [ End Colors Skin  ] ====================== */

@@ -96,7 +96,7 @@
   font-size: 12px;
   border-radius: 50%;
   background-color: #333;
-  color: #fff;
+  color: #23262D;
   -webkit-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
 }
@@ -121,7 +121,7 @@
 }
 
 .butn.half-bg.chang-color:hover {
-  color: #fff;
+  color: #23262D;
 }
 
 .butn.half-bg.hf-sq {
@@ -137,7 +137,7 @@
   height: 100%;
   width: 50px;
   border-radius: 30px;
-  background-color: #f7f7f7;
+  background-color: #23262D;
   z-index: -1;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -164,7 +164,7 @@
 }
 
 .butn.butn-curve-line {
-  border: 1px solid #fff;
+  border: 1px solid #23262D;
   padding: 15px 30px;
   border-radius: 300%;
 }
@@ -221,8 +221,8 @@
 }
 
 .butn-light {
-  background: #fff;
-  border: 1px solid #fff;
+  background: #23262D;
+  border: 1px solid #23262D;
 }
 
 .butn-light:hover {
@@ -240,7 +240,7 @@
 .butn-orange {
   background-color: #fc6816;
   border: 1px solid #fc6816;
-  color: #fff;
+  color: #23262D;
 }
 
 .butn-orange:hover {
@@ -256,7 +256,7 @@
 .butn-dark {
   background-color: #111;
   border: 1px solid #111;
-  color: #fff;
+  color: #23262D;
 }
 
 .butn-dark:hover {
@@ -272,7 +272,7 @@
 .butn-green {
   background-color: #17be74;
   border: 1px solid #17be74;
-  color: #fff;
+  color: #23262D;
 }
 
 .butn-green:hover {
@@ -287,7 +287,7 @@
 }
 
 .butn-green.butn-bord:hover {
-  color: #fff;
+  color: #23262D;
   background-color: #17be74;
   border-color: #17be74;
 }
@@ -316,8 +316,8 @@
 }
 
 .butn-flora {
-  background-color: #fff0ef;
-  border: 1px solid #fff0ef;
+  background-color: #23262D0ef;
+  border: 1px solid #23262D0ef;
 }
 
 .butn-flora span {
@@ -325,54 +325,54 @@
 }
 
 .butn-flora:hover {
-  background-color: #3b3f82;
-  border-color: #3b3f82;
+  background-color: #BCBCBC;
+  border-color: #BCBCBC;
 }
 
 .butn-flora:hover span {
-  color: #fff;
+  color: #23262D;
 }
 
 .butn-flora.butn-bord {
-  border-color: #fff0ef;
+  border-color: #23262D0ef;
   background-color: transparent;
 }
 
 .butn-flora.butn-bord:hover {
-  background-color: #fff0ef;
-  border-color: #fff0ef;
+  background-color: #23262D0ef;
+  border-color: #23262D0ef;
 }
 
 .butn-blurblack {
-  background-color: #3b3f82;
-  border: 1px solid #3b3f82;
+  background-color: #BCBCBC;
+  border: 1px solid #BCBCBC;
 }
 
 .butn-blurblack span {
-  color: #fff;
+  color: #23262D;
 }
 
 .butn-blurblack:hover {
   background-color: transparent;
-  border-color: #3b3f82;
+  border-color: #BCBCBC;
 }
 
 .butn-blurblack:hover span {
-  color: #3b3f82;
+  color: #BCBCBC;
 }
 
 .butn-blurblack.butn-bord {
-  border-color: #3b3f82;
+  border-color: #BCBCBC;
   background-color: transparent;
 }
 
 .butn-blurblack.butn-bord:hover {
-  background-color: #3b3f82;
-  border-color: #3b3f82;
+  background-color: #BCBCBC;
+  border-color: #BCBCBC;
 }
 
 .butn-blurblack.butn-bord:hover span {
-  color: #fff;
+  color: #23262D;
 }
 
 .butn-no-radius {
@@ -574,7 +574,7 @@
   padding: 15px 30px;
   min-width: 180px;
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid #23262D;
   border-radius: 30px;
   position: relative;
   -webkit-transition: all .4s;
@@ -593,7 +593,7 @@
 }
 
 .butn-dots:hover {
-  background: #fff;
+  background: #23262D;
   color: #23262d;
 }
 
@@ -607,7 +607,7 @@
 .more-butn {
   padding: 14px 35px;
   border-radius: 30px;
-  background: #fff;
+  background: #23262D;
   -webkit-box-shadow: 0px 20px 40px rgba(72, 119, 175, 0.12);
   box-shadow: 0px 20px 40px rgba(72, 119, 175, 0.12);
   font-size: 14px;
@@ -618,15 +618,15 @@
 
 .more-butn:hover {
   background: #23262d;
-  color: #fff;
+  color: #23262D;
 }
 
 [data-overlay-dark] .butn-light:hover .text {
-  color: #fff !important;
+  color: #23262D !important;
 }
 
 [data-overlay-dark] .butn-light:hover .text span {
-  color: #fff !important;
+  color: #23262D !important;
 }
 
 /* ====================== [ End Button Style ] ====================== */

@@ -42,20 +42,20 @@
 
 	&.bg-white{
 		color: #23262d;
-		border: 1px solid #fff;
+		border: 1px solid #23262D;
 
 		&:hover{
 			background: transparent !important;
-			border-color: #fff;
-			color: #fff;
+			border-color: #23262D;
+			color: #23262D;
 		}
 	}
 
 	&.bord-white{
-		border: 1px solid #fff;
+		border: 1px solid #23262D;
 
 		&:hover{
-			background: #fff;
+			background: #23262D;
 			color: #23262d;
 		}
 	}
@@ -107,7 +107,7 @@
 			font-size: 12px;
 			border-radius: 50%;
 			background-color: #333;
-			color: #fff;
+			color: #23262D;
 			box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
 		}
 	}
@@ -131,7 +131,7 @@
 			transition: all .4s;
 
 			&:hover{
-				color: #fff;
+				color: #23262D;
 			}
 		}
 
@@ -148,7 +148,7 @@
 			height: 100%;
 			width: 50px;
 			border-radius: 30px;
-			background-color: #f7f7f7;
+			background-color: #23262D;
 			z-index: -1;
 			transition: all .4s;
 		}
@@ -174,7 +174,7 @@
 	}
 
 	&.butn-curve-line{
-		border: 1px solid #fff;
+		border: 1px solid #23262D;
 		padding: 15px 30px;
 		border-radius: 300%;
 	}
@@ -232,8 +232,8 @@
 }
 
 .butn-light{
-	background: #fff;
-	border: 1px solid #fff;
+	background: #23262D;
+	border: 1px solid #23262D;
 
 	&:hover{
 		background: transparent;
@@ -251,7 +251,7 @@
 .butn-orange{
 	background-color: #fc6816;
 	border: 1px solid #fc6816;
-	color: #fff;
+	color: #23262D;
 
 	&:hover{
 		background-color: transparent;
@@ -267,7 +267,7 @@
 .butn-dark{
 	background-color: #111;
 	border: 1px solid #111;
-	color: #fff;
+	color: #23262D;
 
 	&:hover{
 		background-color: transparent;
@@ -283,7 +283,7 @@
 .butn-green{
 	background-color: #17be74;
 	border: 1px solid #17be74;
-	color: #fff;
+	color: #23262D;
 
 	&:hover{
 		background-color: transparent;
@@ -296,7 +296,7 @@
 		background-color: transparent;
 
 		&:hover{
-			color: #fff;
+			color: #23262D;
 			background-color: #17be74;
 			border-color: #17be74;
 		}
@@ -327,60 +327,60 @@
 }
 
 .butn-flora{
-	background-color: #fff0ef;
-	border: 1px solid #fff0ef;
+	background-color: #23262D0ef;
+	border: 1px solid #23262D0ef;
 
 	span{
 		color: inherit;
 	}
 
 	&:hover{
-		background-color: #3b3f82;
-		border-color: #3b3f82;
+		background-color: #BCBCBC;
+		border-color: #BCBCBC;
 
 		span{
-			color: #fff;
+			color: #23262D;
 		}
 	}
 
 	&.butn-bord{
-		border-color: #fff0ef;
+		border-color: #23262D0ef;
 		background-color: transparent;
 
 		&:hover{
-			background-color: #fff0ef;
-			border-color: #fff0ef;
+			background-color: #23262D0ef;
+			border-color: #23262D0ef;
 		}
 	}
 }
 
 .butn-blurblack{
-	background-color: #3b3f82;
-	border: 1px solid #3b3f82;
+	background-color: #BCBCBC;
+	border: 1px solid #BCBCBC;
 
 	span{
-		color: #fff;
+		color: #23262D;
 	}
 
 	&:hover{
 		background-color: transparent;
-		border-color: #3b3f82;
+		border-color: #BCBCBC;
 
 		span{
-			color: #3b3f82;
+			color: #BCBCBC;
 		}
 	}
 
 	&.butn-bord{
-		border-color: #3b3f82;
+		border-color: #BCBCBC;
 		background-color: transparent;
 
 		&:hover{
-			background-color: #3b3f82;
-			border-color: #3b3f82;
+			background-color: #BCBCBC;
+			border-color: #BCBCBC;
 
 			span{
-				color: #fff;
+				color: #23262D;
 			}
 		}
 	}
@@ -599,7 +599,7 @@
 	padding: 15px 30px;
 	min-width: 180px;
 	text-align: center;
-	border: 1px solid #fff;
+	border: 1px solid #23262D;
 	border-radius: 30px;
 	position: relative;
 	transition: all .4s;
@@ -615,7 +615,7 @@
 	}
 
 	&:hover{
-		background: #fff;
+		background: #23262D;
 		color: #23262d;
 	}
 }
@@ -630,7 +630,7 @@
 
 .more-butn{
 	padding: 12px 32px;
-	background: #fff;
+	background: #23262D;
 	border-bottom: 4px solid #eee;
 	box-shadow: 0px 0px 30px rgba(72,119,175,.12);
 	font-size: 14px;
@@ -638,7 +638,7 @@
 
 	&:hover{
 		background: #23262d;
-		color: #fff;
+		color: #23262D;
 	}
 }
 
@@ -649,10 +649,10 @@
 		&:hover{
 
 			.text{
-				color: #fff !important;
+				color: #23262D !important;
 
 				span{
-					color: #fff !important;
+					color: #23262D !important;
 				}
 			}
 		}

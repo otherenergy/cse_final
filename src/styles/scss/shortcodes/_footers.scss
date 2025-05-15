@@ -84,7 +84,7 @@ footer{
                     width: 100%;
                     padding: 25px 30px;
                     padding-right: 210px;
-                    background: #fff;
+                    background: #23262D;
                     border: 0;
                     box-shadow: 0px 10px 50px -10px rgba(0,0,0,.1);
 
@@ -171,11 +171,11 @@ footer{
     }
 
     &.gr-gray{
-        background: linear-gradient(to bottom, #f7f7f7, transparent);
+        background: linear-gradient(to bottom, #23262D, transparent);
     }
 
     &.bg-dark-blue{
-        color: #fff;
+        color: #23262D;
 
         &:before{
             background: transparent;
@@ -210,7 +210,7 @@ footer{
         border-bottom: 1px solid rgba(255,255,255,.1);
 
         .butn-gr{
-            background: #fff;
+            background: #23262D;
 
             span{
                 transition: all .4s;
@@ -241,7 +241,7 @@ footer{
 
 .footer-half{
     background: #1c212a;
-    color: #fff;
+    color: #23262D;
     position: relative;
     margin-top: 80px;
     z-index: 2;

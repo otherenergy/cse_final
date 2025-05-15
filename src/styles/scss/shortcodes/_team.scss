@@ -57,8 +57,8 @@
                 left: 40px;
                 bottom: 0;
                 right: 0;
-                background: #fff;
-                background: linear-gradient(to top , #fff, transparent);
+                background: #23262D;
+                background: linear-gradient(to top , #23262D, transparent);
                 box-shadow: 0px 25px 30px rgba(0,0,0,.07);
                 z-index: -1;
             }
@@ -120,7 +120,7 @@
         &.one{
 
             &:after{
-                background: #fff0ef;
+                background: #23262D0ef;
             }
         }
 
@@ -134,7 +134,7 @@
         &.three{
 
             &:after{
-                background: #fffdef;
+                background: #23262Ddef;
             }
         }
 
@@ -176,13 +176,13 @@
                 line-height: 50px;
                 text-align: center;
                 border-radius: 50%;
-                background: #fff;
+                background: #23262D;
                 font-size: 13px;
                 transition: all .4s;
 
                 &:hover{
                     background: #181b31;
-                    color: #fff;
+                    color: #23262D;
                 }
             }
         }

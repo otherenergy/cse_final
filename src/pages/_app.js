@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         </Head>
 
         <Component {...pageProps }/> 
-		<ProgressScroll />
+		{/* <ProgressScroll /> */}
         <Script strategy="beforeInteractive" src="/js/bootstrap.bundle.min.js"></Script>
         <Script strategy="beforeInteractive" src="/js/wow.min.js"></Script>
         <Script strategy="beforeInteractive" src="/js/splitting.min.js"></Script>
