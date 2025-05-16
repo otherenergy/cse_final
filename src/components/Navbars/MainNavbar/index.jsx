@@ -51,7 +51,7 @@ const Navbar = ({ navbarRef, theme, logoTheme }) => {
           <ul className="navbar-nav">
             <li className="nav-item dropdown">
             <span className="nav-link dropdown-toggle" role="button" aria-expanded="false">
-              <Link href="/cleanstarenergy"><a>Home</a></Link>
+              <Link href="/"><a>Home</a></Link>
             </span>
             </li>
             

@@ -36,6 +36,7 @@ const CleanStarEnergy = () => {
     <>
       <Head>
         <title>Clean Star Energy LLC</title>
+		<link rel="canonical" href="https://www.cleanstarenergyusa.com" />
       </Head>
 
       <MainLightLayout defaultLogoTheme="dark">

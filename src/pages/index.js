@@ -1,26 +1,8 @@
-/* const Home = () => {
-    return <div / >
-}
-
-export const getServerSideProps = async() => {
-    return {
-        redirect: {
-            permanent: true,
-            destination: '/cleanstarenergy',
-        }
-    }
-} */
-
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+// pages/index.js (Nueva raíz modificada)
+import CleanStarEnergy from './cleanstarenergy'
 
 const Home = () => {
-    const router = useRouter()
-    useEffect(() => {
-        router.replace('/cleanstarenergy')
-    }, [])
-    return <div>Loading...</div>
+  return <CleanStarEnergy />
 }
 
-
-export default Home;
+export default Home
