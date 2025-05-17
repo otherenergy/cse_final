@@ -2,5 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/cleanstarenergy-about": "pages/cleanstarenergy-about.js"
+  "/cleanstarenergy-about": "pages/cleanstarenergy-about.html",
+  "/cleanstarenergy-contact": "pages/cleanstarenergy-contact.html",
+  "/cleanstarenergy-services": "pages/cleanstarenergy-services.html",
+  "/cleanstarenergy": "pages/cleanstarenergy.html",
+  "/": "pages/index.html",
+  "/404": "pages/404.html"
 }

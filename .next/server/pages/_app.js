@@ -1,112 +1,142 @@
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
+"use strict";
 (() => {
 var exports = {};
-exports.id = "pages/_app";
-exports.ids = ["pages/_app"];
+exports.id = 888;
+exports.ids = [888];
 exports.modules = {
 
-/***/ "./src/common/scrollToTop.js":
-/*!***********************************!*\
-  !*** ./src/common/scrollToTop.js ***!
-  \***********************************/
+/***/ 530:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst scrollToTop = ()=>{\n    let offset = 150;\n    let progressWrap = document.querySelector(\".progress-wrap\");\n    let progressPath = document.querySelector(\".progress-wrap path\");\n    let pathLength = progressPath.getTotalLength();\n    const updateProgress = ()=>{\n        let scroll = window.pageYOffset;\n        let height = document.documentElement.scrollHeight - window.innerHeight;\n        let progress = pathLength - scroll * pathLength / height;\n        progressPath.style.strokeDashoffset = progress;\n    };\n    if (progressWrap) {\n        progressPath.style.transition = progressPath.style.WebkitTransition = \"none\";\n        progressPath.style.strokeDasharray = pathLength + \" \" + pathLength;\n        progressPath.style.strokeDashoffset = pathLength;\n        progressPath.getBoundingClientRect();\n        progressPath.style.transition = progressPath.style.WebkitTransition = \"stroke-dashoffset 10ms linear\";\n        updateProgress();\n        window.addEventListener(\"scroll\", updateProgress);\n        window.addEventListener(\"scroll\", function() {\n            if (window.pageYOffset > offset) {\n                progressWrap.classList.add(\"active-progress\");\n            } else {\n                document.querySelector(\".progress-wrap\").classList.remove(\"active-progress\");\n            }\n        });\n        progressWrap.addEventListener(\"click\", function(event) {\n            event.preventDefault();\n            window.scrollTo({\n                top: 0,\n                behavior: \"smooth\"\n            });\n            return false;\n        });\n    }\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scrollToTop);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tbW9uL3Njcm9sbFRvVG9wLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxNQUFNQSxXQUFXLEdBQUcsSUFBTTtJQUN4QixJQUFJQyxNQUFNLEdBQUcsR0FBRztJQUNoQixJQUFJQyxZQUFZLEdBQUdDLFFBQVEsQ0FBQ0MsYUFBYSxDQUFDLGdCQUFnQixDQUFDO0lBQzNELElBQUlDLFlBQVksR0FBR0YsUUFBUSxDQUFDQyxhQUFhLENBQUMscUJBQXFCLENBQUM7SUFDaEUsSUFBSUUsVUFBVSxHQUFHRCxZQUFZLENBQUNFLGNBQWMsRUFBRTtJQUM5QyxNQUFNQyxjQUFjLEdBQUcsSUFBTTtRQUMzQixJQUFJQyxNQUFNLEdBQUdDLE1BQU0sQ0FBQ0MsV0FBVztRQUMvQixJQUFJQyxNQUFNLEdBQUdULFFBQVEsQ0FBQ1UsZUFBZSxDQUFDQyxZQUFZLEdBQUdKLE1BQU0sQ0FBQ0ssV0FBVztRQUN2RSxJQUFJQyxRQUFRLEdBQUdWLFVBQVUsR0FBRyxNQUFPLEdBQUdBLFVBQVUsR0FBSU0sTUFBTTtRQUMxRFAsWUFBWSxDQUFDWSxLQUFLLENBQUNDLGdCQUFnQixHQUFHRixRQUFRLENBQUM7S0FDaEQ7SUFDRCxJQUFJZCxZQUFZLEVBQUU7UUFDaEJHLFlBQVksQ0FBQ1ksS0FBSyxDQUFDRSxVQUFVLEdBQUdkLFlBQVksQ0FBQ1ksS0FBSyxDQUFDRyxnQkFBZ0IsR0FDakUsTUFBTSxDQUFDO1FBQ1RmLFlBQVksQ0FBQ1ksS0FBSyxDQUFDSSxlQUFlLEdBQUdmLFVBQVUsR0FBRyxHQUFHLEdBQUdBLFVBQVUsQ0FBQztRQUNuRUQsWUFBWSxDQUFDWSxLQUFLLENBQUNDLGdCQUFnQixHQUFHWixVQUFVLENBQUM7UUFDakRELFlBQVksQ0FBQ2lCLHFCQUFxQixFQUFFLENBQUM7UUFDckNqQixZQUFZLENBQUNZLEtBQUssQ0FBQ0UsVUFBVSxHQUFHZCxZQUFZLENBQUNZLEtBQUssQ0FBQ0csZ0JBQWdCLEdBQ2pFLCtCQUErQixDQUFDO1FBRWxDWixjQUFjLEVBQUUsQ0FBQztRQUNqQkUsTUFBTSxDQUFDYSxnQkFBZ0IsQ0FBQyxRQUFRLEVBQUVmLGNBQWMsQ0FBQyxDQUFDO1FBQ2xERSxNQUFNLENBQUNhLGdCQUFnQixDQUFDLFFBQVEsRUFBRSxXQUFZO1lBQzVDLElBQUliLE1BQU0sQ0FBQ0MsV0FBVyxHQUFHVixNQUFNLEVBQUU7Z0JBQy9CQyxZQUFZLENBQUNzQixTQUFTLENBQUNDLEdBQUcsQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO2FBQy9DLE1BQU07Z0JBQ0x0QixRQUFRLENBQ0xDLGFBQWEsQ0FBQyxnQkFBZ0IsQ0FBQyxDQUMvQm9CLFNBQVMsQ0FBQ0UsTUFBTSxDQUFDLGlCQUFpQixDQUFDLENBQUM7YUFDeEM7U0FDRixDQUFDLENBQUM7UUFDSHhCLFlBQVksQ0FBQ3FCLGdCQUFnQixDQUFDLE9BQU8sRUFBRSxTQUFVSSxLQUFLLEVBQUU7WUFDdERBLEtBQUssQ0FBQ0MsY0FBYyxFQUFFLENBQUM7WUFDdkJsQixNQUFNLENBQUNtQixRQUFRLENBQUM7Z0JBQUVDLEdBQUcsRUFBRSxDQUFDO2dCQUFFQyxRQUFRLEVBQUUsUUFBUTthQUFFLENBQUMsQ0FBQztZQUNoRCxPQUFPLEtBQUssQ0FBQztTQUNkLENBQUMsQ0FBQztLQUNKO0NBQ0Y7QUFFRCxpRUFBZS9CLFdBQVcsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL0NsZWFuIFN0YXIgRW5lcmd5IGxsYy8uL3NyYy9jb21tb24vc2Nyb2xsVG9Ub3AuanM/ODUwZSJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBzY3JvbGxUb1RvcCA9ICgpID0+IHtcbiAgbGV0IG9mZnNldCA9IDE1MDtcbiAgbGV0IHByb2dyZXNzV3JhcCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucHJvZ3Jlc3Mtd3JhcFwiKTtcbiAgbGV0IHByb2dyZXNzUGF0aCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucHJvZ3Jlc3Mtd3JhcCBwYXRoXCIpO1xuICBsZXQgcGF0aExlbmd0aCA9IHByb2dyZXNzUGF0aC5nZXRUb3RhbExlbmd0aCgpO1xuICBjb25zdCB1cGRhdGVQcm9ncmVzcyA9ICgpID0+IHtcbiAgICBsZXQgc2Nyb2xsID0gd2luZG93LnBhZ2VZT2Zmc2V0O1xuICAgIGxldCBoZWlnaHQgPSBkb2N1bWVudC5kb2N1bWVudEVsZW1lbnQuc2Nyb2xsSGVpZ2h0IC0gd2luZG93LmlubmVySGVpZ2h0O1xuICAgIGxldCBwcm9ncmVzcyA9IHBhdGhMZW5ndGggLSAoc2Nyb2xsICogcGF0aExlbmd0aCkgLyBoZWlnaHQ7XG4gICAgcHJvZ3Jlc3NQYXRoLnN0eWxlLnN0cm9rZURhc2hvZmZzZXQgPSBwcm9ncmVzcztcbiAgfTtcbiAgaWYgKHByb2dyZXNzV3JhcCkge1xuICAgIHByb2dyZXNzUGF0aC5zdHlsZS50cmFuc2l0aW9uID0gcHJvZ3Jlc3NQYXRoLnN0eWxlLldlYmtpdFRyYW5zaXRpb24gPVxuICAgICAgXCJub25lXCI7XG4gICAgcHJvZ3Jlc3NQYXRoLnN0eWxlLnN0cm9rZURhc2hhcnJheSA9IHBhdGhMZW5ndGggKyBcIiBcIiArIHBhdGhMZW5ndGg7XG4gICAgcHJvZ3Jlc3NQYXRoLnN0eWxlLnN0cm9rZURhc2hvZmZzZXQgPSBwYXRoTGVuZ3RoO1xuICAgIHByb2dyZXNzUGF0aC5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKTtcbiAgICBwcm9ncmVzc1BhdGguc3R5bGUudHJhbnNpdGlvbiA9IHByb2dyZXNzUGF0aC5zdHlsZS5XZWJraXRUcmFuc2l0aW9uID1cbiAgICAgIFwic3Ryb2tlLWRhc2hvZmZzZXQgMTBtcyBsaW5lYXJcIjtcblxuICAgIHVwZGF0ZVByb2dyZXNzKCk7XG4gICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoXCJzY3JvbGxcIiwgdXBkYXRlUHJvZ3Jlc3MpO1xuICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKFwic2Nyb2xsXCIsIGZ1bmN0aW9uICgpIHtcbiAgICAgIGlmICh3aW5kb3cucGFnZVlPZmZzZXQgPiBvZmZzZXQpIHtcbiAgICAgICAgcHJvZ3Jlc3NXcmFwLmNsYXNzTGlzdC5hZGQoXCJhY3RpdmUtcHJvZ3Jlc3NcIik7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICBkb2N1bWVudFxuICAgICAgICAgIC5xdWVyeVNlbGVjdG9yKFwiLnByb2dyZXNzLXdyYXBcIilcbiAgICAgICAgICAuY2xhc3NMaXN0LnJlbW92ZShcImFjdGl2ZS1wcm9ncmVzc1wiKTtcbiAgICAgIH1cbiAgICB9KTtcbiAgICBwcm9ncmVzc1dyYXAuYWRkRXZlbnRMaXN0ZW5lcihcImNsaWNrXCIsIGZ1bmN0aW9uIChldmVudCkge1xuICAgICAgZXZlbnQucHJldmVudERlZmF1bHQoKTtcbiAgICAgIHdpbmRvdy5zY3JvbGxUbyh7IHRvcDogMCwgYmVoYXZpb3I6IFwic21vb3RoXCIgfSk7XG4gICAgICByZXR1cm4gZmFsc2U7XG4gICAgfSk7XG4gIH1cbn07XG5cbmV4cG9ydCBkZWZhdWx0IHNjcm9sbFRvVG9wO1xuIl0sIm5hbWVzIjpbInNjcm9sbFRvVG9wIiwib2Zmc2V0IiwicHJvZ3Jlc3NXcmFwIiwiZG9jdW1lbnQiLCJxdWVyeVNlbGVjdG9yIiwicHJvZ3Jlc3NQYXRoIiwicGF0aExlbmd0aCIsImdldFRvdGFsTGVuZ3RoIiwidXBkYXRlUHJvZ3Jlc3MiLCJzY3JvbGwiLCJ3aW5kb3ciLCJwYWdlWU9mZnNldCIsImhlaWdodCIsImRvY3VtZW50RWxlbWVudCIsInNjcm9sbEhlaWdodCIsImlubmVySGVpZ2h0IiwicHJvZ3Jlc3MiLCJzdHlsZSIsInN0cm9rZURhc2hvZmZzZXQiLCJ0cmFuc2l0aW9uIiwiV2Via2l0VHJhbnNpdGlvbiIsInN0cm9rZURhc2hhcnJheSIsImdldEJvdW5kaW5nQ2xpZW50UmVjdCIsImFkZEV2ZW50TGlzdGVuZXIiLCJjbGFzc0xpc3QiLCJhZGQiLCJyZW1vdmUiLCJldmVudCIsInByZXZlbnREZWZhdWx0Iiwic2Nyb2xsVG8iLCJ0b3AiLCJiZWhhdmlvciJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/common/scrollToTop.js\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ _app)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: external "next/script"
+const script_namespaceObject = require("next/script");
+var script_default = /*#__PURE__*/__webpack_require__.n(script_namespaceObject);
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__(968);
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+;// CONCATENATED MODULE: ./src/components/Progress-Scroll/index.jsx
+
+
+
+const ProgressScroll = ()=>{
+    useEffect(()=>{
+        scrollToTop();
+    }, []);
+    return /*#__PURE__*/ _jsx("div", {
+        className: "progress-wrap cursor-pointer",
+        children: /*#__PURE__*/ _jsx("svg", {
+            className: "progress-circle svg-content",
+            width: "100%",
+            height: "100%",
+            viewBox: "-1 -1 102 102",
+            children: /*#__PURE__*/ _jsx("path", {
+                d: "M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+            })
+        })
+    });
+};
+/* harmony default export */ const Progress_Scroll = ((/* unused pure expression or super */ null && (ProgressScroll)));
+
+// EXTERNAL MODULE: external "@emailjs/browser"
+var browser_ = __webpack_require__(7163);
+;// CONCATENATED MODULE: ./src/pages/_app.js
+
+/* eslint-disable @next/next/no-before-interactive-script-outside-document */ 
+
+
+
+
+
+function MyApp({ Component , pageProps  }) {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("title", {
+                        children: " Clean Star Energy llc "
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                        name: "viewport",
+                        content: "width=device-width, initial-scale=1, maximum-scale=1"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+                ...pageProps
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                strategy: "beforeInteractive",
+                src: "/js/bootstrap.bundle.min.js"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                strategy: "beforeInteractive",
+                src: "/js/wow.min.js"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                strategy: "beforeInteractive",
+                src: "/js/splitting.min.js"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                strategy: "beforeInteractive",
+                src: "/js/simpleParallax.min.js"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                strategy: "beforeInteractive",
+                src: "/js/isotope.pkgd.min.js"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                strategy: "beforeInteractive",
+                src: "/landing-preview/js/parallax.min.js"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                strategy: "lazyOnload",
+                src: "/js/main.js"
+            })
+        ]
+    });
+}
+/* harmony default export */ const _app = (MyApp);
+
 
 /***/ }),
 
-/***/ "./src/components/Progress-Scroll/index.jsx":
-/*!**************************************************!*\
-  !*** ./src/components/Progress-Scroll/index.jsx ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _common_scrollToTop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/scrollToTop */ \"./src/common/scrollToTop.js\");\n\n\n\nconst ProgressScroll = ()=>{\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        (0,_common_scrollToTop__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n    }, []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"progress-wrap cursor-pointer\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n            className: \"progress-circle svg-content\",\n            width: \"100%\",\n            height: \"100%\",\n            viewBox: \"-1 -1 102 102\",\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n                d: \"M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\components\\\\Progress-Scroll\\\\index.jsx\",\n                lineNumber: 12,\n                columnNumber: 9\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\components\\\\Progress-Scroll\\\\index.jsx\",\n            lineNumber: 11,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\components\\\\Progress-Scroll\\\\index.jsx\",\n        lineNumber: 10,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProgressScroll);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9Qcm9ncmVzcy1TY3JvbGwvaW5kZXguanN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBO0FBQWlDO0FBQ2tCO0FBRW5ELE1BQU1FLGNBQWMsR0FBRyxJQUFNO0lBQzNCRixnREFBUyxDQUFDLElBQU07UUFDZEMsK0RBQVcsRUFBRSxDQUFDO0tBQ2YsRUFBRSxFQUFFLENBQUMsQ0FBQztJQUVQLHFCQUNFLDhEQUFDRSxLQUFHO1FBQUNDLFNBQVMsRUFBQyw4QkFBOEI7a0JBQzNDLDRFQUFDQyxLQUFHO1lBQUNELFNBQVMsRUFBQyw2QkFBNkI7WUFBQ0UsS0FBSyxFQUFDLE1BQU07WUFBQ0MsTUFBTSxFQUFDLE1BQU07WUFBQ0MsT0FBTyxFQUFDLGVBQWU7c0JBQzdGLDRFQUFDQyxNQUFJO2dCQUFDQyxDQUFDLEVBQUMsNENBQTRDOzs7Ozt5QkFBRzs7Ozs7cUJBQ25EOzs7OztpQkFDRixDQUNQO0NBQ0Y7QUFFRCxpRUFBZVIsY0FBYyIsInNvdXJjZXMiOlsid2VicGFjazovL0NsZWFuIFN0YXIgRW5lcmd5IGxsYy8uL3NyYy9jb21wb25lbnRzL1Byb2dyZXNzLVNjcm9sbC9pbmRleC5qc3g/NTBlOSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCdcbmltcG9ydCBzY3JvbGxUb1RvcCBmcm9tICcuLi8uLi9jb21tb24vc2Nyb2xsVG9Ub3AnO1xuXG5jb25zdCBQcm9ncmVzc1Njcm9sbCA9ICgpID0+IHtcbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBzY3JvbGxUb1RvcCgpO1xuICB9LCBbXSk7XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cInByb2dyZXNzLXdyYXAgY3Vyc29yLXBvaW50ZXJcIj5cbiAgICAgIDxzdmcgY2xhc3NOYW1lPVwicHJvZ3Jlc3MtY2lyY2xlIHN2Zy1jb250ZW50XCIgd2lkdGg9XCIxMDAlXCIgaGVpZ2h0PVwiMTAwJVwiIHZpZXdCb3g9XCItMSAtMSAxMDIgMTAyXCI+XG4gICAgICAgIDxwYXRoIGQ9XCJNNTAsMSBhNDksNDkgMCAwLDEgMCw5OCBhNDksNDkgMCAwLDEgMCwtOThcIiAvPlxuICAgICAgPC9zdmc+XG4gICAgPC9kaXY+XG4gIClcbn1cblxuZXhwb3J0IGRlZmF1bHQgUHJvZ3Jlc3NTY3JvbGwiXSwibmFtZXMiOlsidXNlRWZmZWN0Iiwic2Nyb2xsVG9Ub3AiLCJQcm9ncmVzc1Njcm9sbCIsImRpdiIsImNsYXNzTmFtZSIsInN2ZyIsIndpZHRoIiwiaGVpZ2h0Iiwidmlld0JveCIsInBhdGgiLCJkIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/components/Progress-Scroll/index.jsx\n");
-
-/***/ }),
-
-/***/ "./src/pages/_app.js":
-/*!***************************!*\
-  !*** ./src/pages/_app.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/script */ \"next/script\");\n/* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_script__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_Progress_Scroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Progress-Scroll */ \"./src/components/Progress-Scroll/index.jsx\");\n/* harmony import */ var _emailjs_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emailjs/browser */ \"@emailjs/browser\");\n/* harmony import */ var _emailjs_browser__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_emailjs_browser__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/globals.css */ \"./src/styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_6__);\n\n/* eslint-disable @next/next/no-before-interactive-script-outside-document */ \n\n\n\n\n\nfunction MyApp({ Component , pageProps  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_3___default()), {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                        children: \" Clean Star Energy llc \"\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                        lineNumber: 13,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"viewport\",\n                        content: \"width=device-width, initial-scale=1, maximum-scale=1\"\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                        lineNumber: 14,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 12,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                ...pageProps\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 18,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_script__WEBPACK_IMPORTED_MODULE_2___default()), {\n                strategy: \"beforeInteractive\",\n                src: \"/js/bootstrap.bundle.min.js\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 20,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_script__WEBPACK_IMPORTED_MODULE_2___default()), {\n                strategy: \"beforeInteractive\",\n                src: \"/js/wow.min.js\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 21,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_script__WEBPACK_IMPORTED_MODULE_2___default()), {\n                strategy: \"beforeInteractive\",\n                src: \"/js/splitting.min.js\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 22,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_script__WEBPACK_IMPORTED_MODULE_2___default()), {\n                strategy: \"beforeInteractive\",\n                src: \"/js/simpleParallax.min.js\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 23,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_script__WEBPACK_IMPORTED_MODULE_2___default()), {\n                strategy: \"beforeInteractive\",\n                src: \"/js/isotope.pkgd.min.js\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 24,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_script__WEBPACK_IMPORTED_MODULE_2___default()), {\n                strategy: \"beforeInteractive\",\n                src: \"/landing-preview/js/parallax.min.js\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 25,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_script__WEBPACK_IMPORTED_MODULE_2___default()), {\n                strategy: \"lazyOnload\",\n                src: \"/js/main.js\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Proyectos_web\\\\cse_final\\\\cse_final\\\\src\\\\pages\\\\_app.js\",\n                lineNumber: 26,\n                columnNumber: 9\n            }, this)\n        ]\n    }, void 0, true);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyApp);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2FwcC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7OztBQUNBO0FBREEsNkVBQTZFLENBQ25EO0FBQ087QUFDSjtBQUM4QjtBQUNwQjtBQUNSO0FBRS9CLFNBQVNLLEtBQUssQ0FBQyxFQUFFQyxTQUFTLEdBQUVDLFNBQVMsR0FBRSxFQUFFO0lBQ3JDLHFCQUNBOzswQkFDSSw4REFBQ0wsa0RBQUk7O2tDQUNMLDhEQUFDTSxPQUFLO2tDQUFDLHlCQUF1Qjs7Ozs7NEJBQVE7a0NBQ3RDLDhEQUFDQyxNQUFJO3dCQUFDQyxJQUFJLEVBQUcsVUFBVTt3QkFDdkJDLE9BQU8sRUFBRyxzREFBc0Q7Ozs7OzRCQUFHOzs7Ozs7b0JBQzVEOzBCQUVQLDhEQUFDTCxTQUFTO2dCQUFFLEdBQUdDLFNBQVM7Ozs7O29CQUFJOzBCQUU1Qiw4REFBQ04sb0RBQU07Z0JBQUNXLFFBQVEsRUFBQyxtQkFBbUI7Z0JBQUNDLEdBQUcsRUFBQyw2QkFBNkI7Ozs7O29CQUFVOzBCQUNoRiw4REFBQ1osb0RBQU07Z0JBQUNXLFFBQVEsRUFBQyxtQkFBbUI7Z0JBQUNDLEdBQUcsRUFBQyxnQkFBZ0I7Ozs7O29CQUFVOzBCQUNuRSw4REFBQ1osb0RBQU07Z0JBQUNXLFFBQVEsRUFBQyxtQkFBbUI7Z0JBQUNDLEdBQUcsRUFBQyxzQkFBc0I7Ozs7O29CQUFVOzBCQUN6RSw4REFBQ1osb0RBQU07Z0JBQUNXLFFBQVEsRUFBQyxtQkFBbUJDO2dCQUFBQSxHQUFHLEVBQUMsMkJBQTJCOzs7OztvQkFBVTswQkFDN0UsOERBQUNaLG9EQUFNO2dCQUFDVyxRQUFRLEVBQUMsbUJBQW1CO2dCQUFDQyxHQUFHLEVBQUMseUJBQXlCOzs7OztvQkFBVTswQkFDNUUsOERBQUNaLG9EQUFNO2dCQUFDVyxRQUFRLEVBQUMsbUJBQW1CO2dCQUFDQyxHQUFHLEVBQUMscUNBQXFDOzs7OztvQkFBVTswQkFDeEYsOERBQUNaLG9EQUFNO2dCQUFDVyxRQUFRLEVBQUMsWUFBWTtnQkFBQ0MsR0FBRyxFQUFDLGFBQWE7Ozs7O29CQUFVOztvQkFDMUQsQ0FDRDtDQUNMO0FBRUQsaUVBQWVSLEtBQUssRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL0NsZWFuIFN0YXIgRW5lcmd5IGxsYy8uL3NyYy9wYWdlcy9fYXBwLmpzPzhmZGEiXSwic291cmNlc0NvbnRlbnQiOlsiLyogZXNsaW50LWRpc2FibGUgQG5leHQvbmV4dC9uby1iZWZvcmUtaW50ZXJhY3RpdmUtc2NyaXB0LW91dHNpZGUtZG9jdW1lbnQgKi9cbmltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBTY3JpcHQgZnJvbSBcIm5leHQvc2NyaXB0XCI7XG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5pbXBvcnQgUHJvZ3Jlc3NTY3JvbGwgZnJvbSBcIi4uL2NvbXBvbmVudHMvUHJvZ3Jlc3MtU2Nyb2xsXCI7XG5pbXBvcnQgZW1haWxqcyBmcm9tICdAZW1haWxqcy9icm93c2VyJztcbmltcG9ydCBcIi4uL3N0eWxlcy9nbG9iYWxzLmNzc1wiO1xuXG5mdW5jdGlvbiBNeUFwcCh7IENvbXBvbmVudCwgcGFnZVByb3BzIH0pIHtcbiAgICByZXR1cm4gKCBcbiAgICA8PlxuICAgICAgICA8SGVhZD5cbiAgICAgICAgPHRpdGxlPiBDbGVhbiBTdGFyIEVuZXJneSBsbGMgPC90aXRsZT4gXG4gICAgICAgIDxtZXRhIG5hbWUgPSBcInZpZXdwb3J0XCJcbiAgICAgICAgY29udGVudCA9IFwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEsIG1heGltdW0tc2NhbGU9MVwiIC8+XG4gICAgICAgIDwvSGVhZD5cblxuICAgICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHMgfS8+IFxuXHRcdHsvKiA8UHJvZ3Jlc3NTY3JvbGwgLz4gKi99XG4gICAgICAgIDxTY3JpcHQgc3RyYXRlZ3k9XCJiZWZvcmVJbnRlcmFjdGl2ZVwiIHNyYz1cIi9qcy9ib290c3RyYXAuYnVuZGxlLm1pbi5qc1wiPjwvU2NyaXB0PlxuICAgICAgICA8U2NyaXB0IHN0cmF0ZWd5PVwiYmVmb3JlSW50ZXJhY3RpdmVcIiBzcmM9XCIvanMvd293Lm1pbi5qc1wiPjwvU2NyaXB0PlxuICAgICAgICA8U2NyaXB0IHN0cmF0ZWd5PVwiYmVmb3JlSW50ZXJhY3RpdmVcIiBzcmM9XCIvanMvc3BsaXR0aW5nLm1pbi5qc1wiPjwvU2NyaXB0PlxuICAgICAgICA8U2NyaXB0IHN0cmF0ZWd5PVwiYmVmb3JlSW50ZXJhY3RpdmVcInNyYz1cIi9qcy9zaW1wbGVQYXJhbGxheC5taW4uanNcIj48L1NjcmlwdD5cbiAgICAgICAgPFNjcmlwdCBzdHJhdGVneT1cImJlZm9yZUludGVyYWN0aXZlXCIgc3JjPVwiL2pzL2lzb3RvcGUucGtnZC5taW4uanNcIj48L1NjcmlwdD5cbiAgICAgICAgPFNjcmlwdCBzdHJhdGVneT1cImJlZm9yZUludGVyYWN0aXZlXCIgc3JjPVwiL2xhbmRpbmctcHJldmlldy9qcy9wYXJhbGxheC5taW4uanNcIj48L1NjcmlwdD5cbiAgICAgICAgPFNjcmlwdCBzdHJhdGVneT1cImxhenlPbmxvYWRcIiBzcmM9XCIvanMvbWFpbi5qc1wiPjwvU2NyaXB0PlxuICAgIDwvPlxuICAgICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IE15QXBwOyJdLCJuYW1lcyI6WyJSZWFjdCIsIlNjcmlwdCIsIkhlYWQiLCJQcm9ncmVzc1Njcm9sbCIsImVtYWlsanMiLCJNeUFwcCIsIkNvbXBvbmVudCIsInBhZ2VQcm9wcyIsInRpdGxlIiwibWV0YSIsIm5hbWUiLCJjb250ZW50Iiwic3RyYXRlZ3kiLCJzcmMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/_app.js\n");
-
-/***/ }),
-
-/***/ "./src/styles/globals.css":
-/*!********************************!*\
-  !*** ./src/styles/globals.css ***!
-  \********************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "@emailjs/browser":
-/*!***********************************!*\
-  !*** external "@emailjs/browser" ***!
-  \***********************************/
+/***/ 7163:
 /***/ ((module) => {
 
-"use strict";
 module.exports = require("@emailjs/browser");
 
 /***/ }),
 
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
+/***/ 968:
 /***/ ((module) => {
 
-"use strict";
 module.exports = require("next/head");
 
 /***/ }),
 
-/***/ "next/script":
-/*!******************************!*\
-  !*** external "next/script" ***!
-  \******************************/
+/***/ 6689:
 /***/ ((module) => {
 
-"use strict";
-module.exports = require("next/script");
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
-/***/ ((module) => {
-
-"use strict";
 module.exports = require("react");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
-"use strict";
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ })
 
@@ -117,7 +147,7 @@ module.exports = require("react/jsx-dev-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./src/pages/_app.js"));
+var __webpack_exports__ = (__webpack_exec__(530));
 module.exports = __webpack_exports__;
 
 })();
