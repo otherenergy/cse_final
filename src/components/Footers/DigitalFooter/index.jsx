@@ -27,8 +27,8 @@ const Footer = ({ footerClass, type }) => {
             <div className="col-lg-5 valign">
               <div className="call-button full-width d-flex justify-content-end">
                 <a href="#0" className="butn butn-md bg-light radius-30">
-                  <span className="text text-dark slide-up">Get Started</span>
-                  <span className="text text-dark slide-down">Get Started</span>
+                  <span className="text slide-up">Get Started</span>
+                  <span className="text slide-down">Get Started</span>
                 </a>
               </div>
             </div>

@@ -72,11 +72,11 @@ const Footer = ({ footerClass , type  })=>{
                                             className: "butn butn-md bg-light radius-30",
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    className: "text text-dark slide-up",
+                                                    className: "text slide-up",
                                                     children: "Get Started"
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    className: "text text-dark slide-down",
+                                                    className: "text slide-down",
                                                     children: "Get Started"
                                                 })
                                             ]
@@ -668,12 +668,14 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3015);
-/* harmony import */ var _Split__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8028);
-/* harmony import */ var _data_main_clients_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8394);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([swiper_react__WEBPACK_IMPORTED_MODULE_1__]);
-swiper_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3877);
+/* harmony import */ var _Split__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8028);
+/* harmony import */ var _data_main_clients_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8394);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([swiper_react__WEBPACK_IMPORTED_MODULE_1__, swiper__WEBPACK_IMPORTED_MODULE_2__]);
+([swiper_react__WEBPACK_IMPORTED_MODULE_1__, swiper__WEBPACK_IMPORTED_MODULE_2__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
 /* eslint-disable @next/next/no-img-element */ 
+
 
 
 const Clients = ({ slides  })=>{
@@ -719,6 +721,17 @@ const Clients = ({ slides  })=>{
                         className: "col-sm-10 valign",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_1__.Swiper, {
                             id: "content-carousel-container-unq-2",
+                            autoplay: {
+                                delay: 1000,
+                                disableOnInteraction: false
+                            },
+                            /* pagination={{
+                clickable: false,
+              }} */ // navigation={true}
+                            modules: [
+                                swiper__WEBPACK_IMPORTED_MODULE_2__.Autoplay
+                            ],
+                            // modules={[Autoplay, Pagination, Navigation]}
                             className: "swiper-container",
                             slidesPerView: slides ? 5 : 4,
                             spaceBetween: 0,
@@ -738,25 +751,15 @@ const Clients = ({ slides  })=>{
                                     slidesPerView: slides ? 5 : 4
                                 }
                             },
-                            children: _data_main_clients_json__WEBPACK_IMPORTED_MODULE_3__.map((brand, idx)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_1__.SwiperSlide, {
+                            children: _data_main_clients_json__WEBPACK_IMPORTED_MODULE_4__.map((brand, idx)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_1__.SwiperSlide, {
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: "item",
-                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "img",
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                    src: brand.image,
-                                                    alt: ""
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Split__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                        href: "#0",
-                                                        className: "link",
-                                                        "data-splitting": true,
-                                                        children: brand.title
-                                                    })
-                                                })
-                                            ]
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                src: brand.image,
+                                                alt: ""
+                                            })
                                         })
                                     })
                                 }, idx)
@@ -939,6 +942,7 @@ const Header = ()=>{
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                     className: "sub-head radius mb-10",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                        color: "#FFFFFF",
                                         children: "data analytics is inevitable"
                                     })
                                 }),

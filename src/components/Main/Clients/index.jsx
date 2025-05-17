@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from 'swiper';
 import Split from '../../Split';
 import brands from '../../../data/main/clients.json';
 
@@ -23,6 +24,16 @@ const Clients = ({ slides }) => {
           <div className="col-sm-10 valign">
             <Swiper 
               id="content-carousel-container-unq-2"
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+              /* pagination={{
+                clickable: false,
+              }} */
+              // navigation={true}
+              modules={[Autoplay]}
+              // modules={[Autoplay, Pagination, Navigation]}
               className="swiper-container"
               slidesPerView={slides ? 5 : 4}
               spaceBetween={0}
@@ -49,9 +60,9 @@ const Clients = ({ slides }) => {
                     <div className="item">
                       <div className="img">
                         <img src={brand.image} alt="" />
-                        <Split>
+                        {/* <Split>
                           <a href="#0" className="link" data-splitting>{ brand.title }</a>
-                        </Split>
+                        </Split> */}
                       </div>
                     </div>
                   </SwiperSlide>

@@ -92,7 +92,7 @@ const Header = () => {
           <div className="col-lg-6 valign">
             <div className="cont">
               <div className="sub-head radius mb-10">
-                <span>data analytics is inevitable</span>
+                <span color='#FFFFFF' >data analytics is inevitable</span>
               </div>
               <h1 className="fw-800 fz-45">Union of new layers<br></br>of blockchain from <br></br>experts</h1>
               <p>Proven Expertise With a track record of success ensuring your venture is legally sound and technologically</p>
