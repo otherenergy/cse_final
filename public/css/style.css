@@ -313,7 +313,7 @@ img.left {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 70px 0;
 }
 
 .section-ptb {
@@ -10207,7 +10207,7 @@ body.index-main .bg-gray {
     color: #23262D !important;
   }
   body.index-arch .section-padding {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   body.index-arch .sec-head .flex {
     display: block;

@@ -16,6 +16,7 @@ import Skills from '../../components/Main/Skills';
 import Testimonials from '../../components/Main/Testimonials2';
 import Blog from '../../components/Main/Blog2';
 import Footer from "../../components/Footers/DigitalFooter";
+import MultiCriptoChart from "../../components/MultiCriptoChart";
 
 const CleanStarEnergy = () => {
   useEffect(() => {
@@ -44,6 +45,7 @@ const CleanStarEnergy = () => {
         <FixedSearch />
         <Header />
         <Clients />
+        <MultiCriptoChart/>
         <Services />
         <About />
         <Process />

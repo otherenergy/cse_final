@@ -1580,6 +1580,309 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 9005:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(738);
+/* harmony import */ var chart_js_auto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(955);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__, chart_js_auto__WEBPACK_IMPORTED_MODULE_3__]);
+([react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__, chart_js_auto__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
+
+
+// import cryptoInfo from '../../data/main/cryptoInfo.json';
+
+const MultiCriptoChart = ()=>{
+    const { 0: chartData , 1: setChartData  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({});
+    const { 0: loading , 1: setLoading  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
+    const { 0: errors , 1: setErrors  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
+    // Define your API endpoints
+    const APIs = [
+        {
+            id: "Solar Energy SEG Last 7 Days",
+            url: "https://api.coingecko.com/api/v3/coins/solar-energy/market_chart?vs_currency=usd&days=7",
+            color: "rgb(75, 192, 192)",
+            author: "Clean Star Energy LLC",
+            date: "2025"
+        },
+        {
+            id: "Solar Energy SXP Last 7 Days",
+            url: "https://api.coingecko.com/api/v3/coins/swipe/market_chart?vs_currency=usd&days=7",
+            color: "rgb(255, 165, 0)",
+            author: "Clean Star Energy LLC",
+            date: "2025"
+        },
+        {
+            id: "Renewable Energy RET Last 7 Days",
+            url: "https://api.coingecko.com/api/v3/coins/renewable-energy/market_chart?vs_currency=usd&days=7",
+            color: "rgb(147, 51, 234)",
+            author: "Clean Star Energy LLC",
+            date: "2025"
+        }
+    ];
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
+        const fetchAllData = async ()=>{
+            try {
+                const responses = await Promise.allSettled(APIs.map((api)=>fetch(api.url)
+                ));
+                const results = await Promise.all(responses.map((response, index)=>{
+                    if (response.status === "fulfilled") {
+                        if (!response.value.ok) {
+                            throw new Error(`API ${APIs[index].id} request failed`);
+                        }
+                        return response.value.json();
+                    }
+                    return null;
+                }));
+                const newData = {};
+                const errorMessages = [];
+                results.forEach((result, index)=>{
+                    if (!result) {
+                        errorMessages.push(`Failed to fetch ${APIs[index].id} data`);
+                        return;
+                    }
+                    newData[APIs[index].id] = {
+                        labels: result.prices.map((entry)=>new Date(entry[0]).toLocaleDateString()
+                        ),
+                        datasets: [
+                            {
+                                label: `${APIs[index].id.toUpperCase()} in (USD)`,
+                                data: result.prices.map((entry)=>entry[1]
+                                ),
+                                borderColor: APIs[index].color,
+                                tension: 0.1
+                            }
+                        ]
+                    };
+                });
+                setChartData(newData);
+                setErrors(errorMessages);
+            } catch (err) {
+                setErrors([
+                    err.message
+                ]);
+            } finally{
+                setLoading(false);
+            }
+        };
+        fetchAllData();
+    }, []);
+    if (loading) return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        children: "Loading charts..."
+    });
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: "blog-grid section-padding",
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "container",
+            children: [
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "row mb-80",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-md-7",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "simple-head",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
+                                        className: "sub-head radius mb-10",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                            className: "fz-12 ls2 text-u",
+                                            children: "Clean Energy Prices News"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            className: "fw-800 gr-purple-red-text inline",
+                                            children: "Blockchain Conected to Energy Prices"
+                                        })
+                                    })
+                                ]
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-md-5 justify-content-end valign",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "s-title valign ml-auto",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h6", {
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                            href: "",
+                                            children: "View all Prices Live"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                            className: "icon fz-20 pe-7s-angle-right"
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "row",
+                    children: APIs.map((api)=>chartData[api.id] && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-lg-4",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "item box-shadow crv",
+                                    children: [
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "img",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    style: {
+                                                        height: "400px",
+                                                        width: "100%"
+                                                    },
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__.Line, {
+                                                        data: chartData[api.id],
+                                                        options: {
+                                                            responsive: true,
+                                                            maintainAspectRatio: false,
+                                                            scales: {
+                                                                y: {
+                                                                    beginAtZero: false
+                                                                }
+                                                            }
+                                                        }
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: "tags",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                        href: "",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                            children: api.id
+                                                        })
+                                                    })
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "cont",
+                                            children: [
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                    className: "info",
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: "author",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                children: api.author
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: "date",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                className: "fw-800 gr-purple-red-text inline",
+                                                                children: api.date
+                                                            })
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: "title",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                                        className: "fw-700 fz-18",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                            href: "",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                children: api.id
+                                                            })
+                                                        })
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            }, api.id)
+                        })
+                    )
+                })
+            ]
+        })
+    });
+};
+/*  return (
+        <section className="blog-grid section-padding">
+        <div className="container">
+            <div className="container">
+            <div className="row mb-100">
+                <div className="col-md-7">
+                    <div className="simple-head">
+                        <h6 className="sub-head radius mb-20">
+                            <span className="fz-12 ls2 text-u">Cripto News</span>
+                        </h6>
+                        <div>
+                            <h2 className="fw-800 gr-purple-red-text inline">Blockchain Latest Prices</h2>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-5 justify-content-end valign">
+                    <div className="s-title valign ml-auto">
+                        <h6>
+                            <a href="">View all Prices Live</a>
+                            <i className="icon fz-20 pe-7s-angle-right"></i>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                {
+                <div className="col-lg-4">
+                    <div className="item box-shadow crv">
+                        <div className="img">
+                            <div style={{ height: '400px', width: '100%' }}>
+                                <Line data={chartData}options={{responsive: true,maintainAspectRatio: false,scales: {y: {beginAtZero: false}}}}/>
+                            </div>
+                            <div className="tags">
+                                <Link href="">
+                                <a>{cryptoInfo.title}</a>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="cont">
+                        <div className="info">
+                            <div className="author">
+                                <span>{ cryptoInfo.author }</span>
+                            </div>
+                            <div className="date">
+                                <span className="fw-800 gr-purple-red-text inline">{ cryptoInfo.date }</span>
+                            </div>
+                        </div>
+                        <div className="title">
+                            <h5 className="fw-700 fz-18">
+                                <Link href="">
+                                <a>{ cryptoInfo.title }</a>
+                                </Link>
+                            </h5>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </section>
+    );
+}; */ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MultiCriptoChart);
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
 /***/ 8028:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1642,14 +1945,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Main_Testimonials2__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(3375);
 /* harmony import */ var _components_Main_Blog2__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(2433);
 /* harmony import */ var _components_Footers_DigitalFooter__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(9008);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Main_Clients__WEBPACK_IMPORTED_MODULE_7__, _components_Main_Testimonials2__WEBPACK_IMPORTED_MODULE_13__]);
-([_components_Main_Clients__WEBPACK_IMPORTED_MODULE_7__, _components_Main_Testimonials2__WEBPACK_IMPORTED_MODULE_13__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+/* harmony import */ var _components_MultiCriptoChart__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(9005);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Main_Clients__WEBPACK_IMPORTED_MODULE_7__, _components_Main_Testimonials2__WEBPACK_IMPORTED_MODULE_13__, _components_MultiCriptoChart__WEBPACK_IMPORTED_MODULE_16__]);
+([_components_Main_Clients__WEBPACK_IMPORTED_MODULE_7__, _components_Main_Testimonials2__WEBPACK_IMPORTED_MODULE_13__, _components_MultiCriptoChart__WEBPACK_IMPORTED_MODULE_16__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
 /* eslint-disable @next/next/no-css-tags */ 
 
 //= Layout
 
 //= Components
+
 
 
 
@@ -1699,6 +2004,7 @@ const CleanStarEnergy = ()=>{
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Common_FixedSearch__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {}),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Main_Header2__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {}),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Main_Clients__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {}),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_MultiCriptoChart__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Z, {}),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Main_Services2__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z, {}),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Main_About__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z, {}),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Main_Process2__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Z, {}),
