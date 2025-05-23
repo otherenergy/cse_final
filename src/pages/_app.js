@@ -13,6 +13,9 @@ function MyApp({ Component, pageProps }) {
         <title> Clean Star Energy llc </title> 
         <meta name = "viewport"
         content = "width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="canonical" href="https://www.cleanstarenergyusa.com" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/icon.png" />
         </Head>
 
         <Component {...pageProps }/> 
